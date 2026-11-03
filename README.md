@@ -1,20 +1,17 @@
-# BlenderAnim — celý film
+# BlenderAnim — melancholická verzia
 
 [Stiahnuť celý film (MP4)](BlenderAnim_final.mp4?raw=true) · [Stiahnuť Blender projekt a film (ZIP)](BlenderAnim.zip?raw=true)
 
-Na stránke súboru môžeš použiť aj **Download raw file**. ZIP rozbaľ a v Blenderi otvor `BlenderAnim/output/bus_stop_to_stage.blend`.
+Na stránke súboru klikni na **Download raw file**. ZIP rozbaľ a v Blenderi 4.3 alebo novšom otvor **BlenderAnim → output → bus_stop_to_stage.blend**. Celé výsledné video je v súbore `BlenderAnim_final.mp4`.
 
+Film má **1 minútu 49 sekúnd**. Táto verzia pridáva tlmený modrofialový color grading, jemnejší kontrast, nápis **Adrian** na prednej aj zadnej strane trička a záverečný text v jemnej kurzíve. Veta sa postupne objavuje počas posledného odletu kamery a na konci mizne do čiernej:
 
-Celý film má 109 sekúnd. V balíku otvor `output/bus_stop_to_stage.blend` v Blenderi 4.3 alebo novšom. `BlenderAnim_final.mp4` je celé výsledné video, nie výber záberov.
+> Maybe in another life, there will be an opportunity, to be more than a dreamer, Adrian
 
-Zmeny: odstránený nápis BUS / 24, pomalšie kamery a chôdza, kratšie kroky s užším postojom, spojené kolená a lakte, spojité quaternionové rotácie končatín uložené v každej snímke, jemnejšie sadanie a vstávanie, šesť stlačení klávesnice s intervalom 4,5 sekundy, rozsvietená žiarovka pri nápade, stmavenie a rozsvietenie pred koncertom, 20-sekundový odlet kamery a festivalový areál s prírodou, stánkami a svetlami.
+Upravená je aj kamera štúdiového detailu, aby monitor nezakrýval tvár. Zachované sú pomalšia chôdza a kamery, spojené kĺby, dlhšie pauzy pri klávesnici, žiarovka pri nápade, stmavenie pred koncertom, zmrazenie na pódiu a festivalový areál so svetlami a prírodou.
 
-Video je štylizovaná 3D animácia. Hovorené repliky sú zachované ako titulky. Hudba, beaty, atmosféra a zvukové efekty sú vlastné syntetické zvuky bez prevzatých nahrávok. Nejde o fotorealistický film alebo motion capture.
+Medzerník v Blenderi spustí prehrávanie, Num0 zobrazí kameru. **Render → Render Animation** vyrenderuje celý projekt. Farebný grading, záverečná veta, žiara a stmavenia sú v kompozitore; bežné 3D okno ich nemusí zobrazovať. Hotové MP4 obsahuje všetky efekty.
 
-Video: 960 × 540, 24 fps, H.264/AAC. Kompletné 3D zábery sú renderované v EEVEE s priestorovým vzorkovaním a 12 časovými snímkami za sekundu; medzisnímky do 24 fps sa dopočítavajú optickým pohybom osobitne v každom zábere, bez miešania cez strihy. Blender projekt obsahuje animáciu v plných 24 fps a je pripravený aj na vlastný render 1280 × 720 / 32 vzoriek.
+Video má 960 × 540, 24 fps, obraz H.264 a zvuk AAC. Ide o štylizovanú 3D animáciu; repliky sú zobrazené titulkami. Hudba, beaty a zvukové efekty sú vlastné syntetické nahrávky. Blender projekt je pripravený na render 1280 × 720 s 32 vzorkami a animáciou v plných 24 fps. Dodané video používa 12 vyrenderovaných časových snímok za sekundu a optické dopočítanie na 24 fps, osobitne v každom zábere.
 
-Zvukový súbor `final_mix.wav` nechaj vedľa súboru `.blend`. Všetky cesty v projekte sú relatívne. Odporúčaný postup: File → Open, vybrať projekt; Num0 zobrazí kameru a medzerník spustí prehrávanie. Render → Render Animation vytvorí celý film podľa výkonu tvojho počítača.
-
-Zdrojové skripty v `source/` dokumentujú úpravy. Renderovací projekt spája statické objekty a dav, aby prehrávanie bolo menej náročné. Film nevyžaduje žiadne sťahované modely, externé textúry ani doplnky.
-
-Prechody do čiernej a žiara sa aplikujú v kompozitore pri renderovaní. Bežný náhľad v 3D okne ich nemusí zobrazovať; hotové MP4 obsahuje všetky efekty.
+Grafika trička a záverečného textu je zabalená priamo v `.blend`. Zvuk `final_mix.wav` nechaj vedľa projektu. Editovateľné grafické podklady, fonty s licenciou a presné znenie vety sú aj v `output/assets_v3/`. Na otvorenie a render projektu netreba doplnky ani sťahovať modely. Zdrojové skripty a technické poznámky sú v `source/`.
