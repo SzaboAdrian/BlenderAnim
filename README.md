@@ -1,21 +1,28 @@
-# BlenderAnim — jedno stlačenie klávesnice
+# Sebareflexia — Improved
 
-[Stiahnuť celý film (MP4)](BlenderAnim_final.mp4?raw=true) · [Stiahnuť Blender projekt a film (ZIP)](BlenderAnim.zip?raw=true)
+Vylepšená kópia existujúceho Blender filmu: jemnejšia mimika a pohyby, nastupovanie do autobusu cez otvorené dvere, dva detaily v štúdiu a výraznejší koncertový záver. Dĺžka zostáva **1:53**; pôvodný zvuk, dej a jediné stlačenie klávesnice sú zachované.
 
-Na stránke súboru klikni na **Download raw file**. ZIP rozbaľ a v Blenderi 4.3 alebo novšom otvor **BlenderAnim → output → bus_stop_to_stage.blend**. Celé výsledné video je v súbore `BlenderAnim_final.mp4`.
+- [Stiahnuť vylepšený Blender projekt a podklady (ZIP)](Sebareflexia_Improved.zip?raw=true)
+- [Pozrieť alebo stiahnuť celý video náhľad (MP4)](Sebareflexia_Improved_Preview.mp4?raw=true)
+- [Prehľad zmien, overenia a obmedzení](CHANGELOG.md)
+- [Skript s úpravami existujúceho projektu](improve_sebareflexia.py)
 
-Film má **1 minútu 53 sekúnd**. Postava má čisté čierne tričko bez nápisu, prepracovanú tvár s jemnejším nosom a perami, zapustenými očami a veľmi tmavými hnedými vlasmi. Na zastávke prší; scénu dopĺňajú mláky, chladnejšie svetlo a jemný zvuk dažďa.
+Na stránke súboru klikni na **Download raw file**. ZIP rozbaľ a otvor
+**Sebareflexia_Improved → Sebareflexia_Improved.blend** v Blenderi 4.3.2 alebo novšom.
+Súbor **final_mix_v5.wav** nechaj vedľa projektu. Záverečný text je zabalený priamo
+v `.blend`. Doplnky ani sťahovanie modelov na otvorenie projektu netreba.
 
-V štúdiu postava **stlačí medzerník iba raz**, čím spustí beat, ktorý potom plynulo hrá. Bočný záber trvá 19 sekúnd a následné priblíženie na tvár 6 sekúnd. Dĺžka štúdiovej scény aj celého filmu zostáva zachovaná.
+**Render → Render Animation** alebo **Ctrl + F12** spustí render celého filmu.
+Projekt je nastavený na EEVEE, 1280 × 720, 24 fps a 32 vzoriek; výstupné MP4 sa
+uloží vedľa `.blend`. Priložené MP4 je kompletný **náhľad 480 × 270**, nie finálny
+render v rozlíšení projektu. Používa 12 natívne vyrenderovaných snímok za sekundu
+s optickým dopočítaním na 24 fps v rámci jednotlivých záberov. V priečinku
+`previews/` sú kvalitnejšie kontrolné snímky 960 × 540.
 
-Po príchode do stredu pódia postava pomaly zdvihne ruku, zamáva publiku a ruku spustí. Po krátkej pauze sa začne dvadsaťsekundový odlet kamery. Počas neho sa v jemnej kurzíve postupne objaví záverečná veta a na konci zmizne do čiernej:
+Záverečná veta:
 
-> Maybe in another life, there will be an opportunity, to be more than a dreamer, Adrian
+> Maybe in another life, I'll be more than just a dreamer.
 
-Film má melancholický modrofialový grading, pomalšiu chôdzu a kamery, žiarovku pri nápade, stmavenie pred koncertom a festivalový areál so svetlami a prírodou. Štúdiový detail ukazuje tvár z miernejšieho uhla.
-
-Medzerník v Blenderi spustí prehrávanie, Num0 zobrazí kameru. **Render → Render Animation** vyrenderuje celý projekt. Farebný grading, záverečná veta, žiara a stmavenia sú v kompozitore; bežné 3D okno ich nemusí zobrazovať. Hotové MP4 obsahuje všetky efekty.
-
-Video má 960 × 540, 24 fps, obraz H.264 a zvuk AAC. Ide o štylizovanú 3D animáciu; repliky sú zobrazené titulkami. Hudba, beaty a zvukové efekty sú vlastné syntetické nahrávky. Blender projekt je pripravený na render 1280 × 720 s 32 vzorkami a animáciou v plných 24 fps. Dodané video používa 12 vyrenderovaných časových snímok za sekundu a optické dopočítanie na 24 fps, osobitne v každom zábere.
-
-Grafika záverečného textu je zabalená priamo v `.blend`. Zvuk `final_mix_v5.wav` nechaj vedľa projektu. Grafický podklad, font s licenciou a presné znenie vety sú aj v `output/assets_v3/`. Na otvorenie a render projektu netreba doplnky ani sťahovať modely. Zdrojové skripty a technické poznámky sú v `source/`.
+Pôvodná piata verzia zostáva zachovaná:
+[BlenderAnim.zip](BlenderAnim.zip?raw=true) · [BlenderAnim_final.mp4](BlenderAnim_final.mp4?raw=true).
+Tieto staršie súbory neobsahujú nové úpravy zo Sebareflexia Improved.
